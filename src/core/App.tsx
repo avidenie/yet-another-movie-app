@@ -1,20 +1,11 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { LoginScreen } from '../auth/screens/LoginScreen';
+import { ThemeProvider } from './ThemeProvider';
 
 export function App() {
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
-        <Text>Hello, world!</Text>
-      </View>
-    </SafeAreaView>
+    <ThemeProvider>
+      <LoginScreen />
+    </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    height: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
