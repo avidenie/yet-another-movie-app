@@ -1,5 +1,5 @@
 {
-  "name": "@avidenie/yet-another-movie-app",
+  "name": "yet-another-movie-app",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -42,5 +42,6 @@
   },
   "simple-git-hooks": {
     "pre-commit": "yarn lint-staged"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }
