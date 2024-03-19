@@ -27,6 +27,8 @@ to add movies from the list to a list of favorite movies.
 npx react-native@latest init yet-another-movie-app
 ```
 
+Code for this section: https://github.com/avidenie/yet-another-movie-app/tree/01-bootstrap
+
 ### 2. Set up the UI Library
 
 - we will use [GlueStack](https://gluestack.io/) as the preferred UI library
