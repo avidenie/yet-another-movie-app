@@ -8,6 +8,7 @@ The application displays a list of popular movies using [The Movie Database (TMD
 to add movies from the list to a list of favorite movies.
 
 ## What you'll learn
+
 - bootstrapping a new React Native project
 - using an UI library for building layouts
 - working with simple forms
@@ -35,6 +36,8 @@ Code for this section: https://github.com/avidenie/yet-another-movie-app/tree/01
 - follow the [installation guide](https://gluestack.io/ui/docs/guides/install-rn) for setting it up in an existing project
 - get familiar with components from the library and use them for building all the other screens and components
 
+Code for this section: https://github.com/avidenie/yet-another-movie-app/tree/02-ui-library
+
 ### 3. Create a simple login form
 
 - use components from GlueStack to create a simple form with 2 input fields: username and password
@@ -50,6 +53,7 @@ Code for this section: https://github.com/avidenie/yet-another-movie-app/tree/01
 - set up persistance and persist the state between launches
 
 ### 5. Authentication flow
+
 - set up [React Navigation](https://reactnavigation.org/docs/getting-started)
 - implement [the authentication flow](https://reactnavigation.org/docs/auth-flow/):
   - if `isAuthenticated` flag from `auth` reducer is `false`, render a Login Screen
@@ -108,7 +112,7 @@ Code for this section: https://github.com/avidenie/yet-another-movie-app/tree/01
 - add a new tab to list favorite movies
 - add buttons on the lists and the movie details page to add/remove from the list of favorite movies
 
-### 14. Dark theme  (optional)
+### 14. Dark theme (optional)
 
 - add support for dark theme
 - add a settings screen that allows switching between light and dark theme
