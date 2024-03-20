@@ -1,25 +1,27 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { authReducer } from '../../auth/store/authSlice';
 import {
-  persistStore,
   FLUSH,
-  REHYDRATE,
   PAUSE,
   PERSIST,
   PURGE,
   REGISTER,
+  REHYDRATE,
+  persistStore,
 } from 'redux-persist';
+import { authReducer } from '../../auth/store/authSlice';
+import { movieApi } from '../services/movieApi';
 
 export const store = configureStore({
   reducer: {
     auth: authReducer,
+    [movieApi.reducerPath]: movieApi.reducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    }),
+    }).concat(movieApi.middleware),
 });
 
 export const persistor = persistStore(store);

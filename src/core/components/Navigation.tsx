@@ -1,11 +1,11 @@
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { LoginScreen } from '../../auth/screens/LoginScreen';
 import { selectIsAuthenticated } from '../../auth/store/authSlice';
+import { PopularMoviesScreen } from '../../movies/screens/PopularMoviesScreen';
+import { ProfileHeaderButton } from '../../profile/components/ProfileHeaderButton';
 import { ProfileScreen } from '../../profile/screens/ProfileScreen';
 import { useAppSelector } from '../store/hooks';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { PopularMoviesScreen } from '../../popular-movies/screens/PopularMoviesScreen';
-import { ProfileHeaderButton } from '../../profile/components/ProfileHeaderButton';
 
 export type RootStackParamList = {
   Login: undefined;
