@@ -43,6 +43,8 @@ Code for this section: https://github.com/avidenie/yet-another-movie-app/tree/02
 - use components from GlueStack to create a simple form with 2 input fields: username and password
 - use [React Hook Form](https://react-hook-form.com/get-started#ReactNative) for form validation
 
+Code for this section: https://github.com/avidenie/yet-another-movie-app/commits/03-login-screen
+
 ### 4. State management
 
 - set up [Redux Toolkit](https://redux-toolkit.js.org/introduction/getting-started) for state management
