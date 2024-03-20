@@ -72,6 +72,8 @@ Code for this section: https://github.com/avidenie/yet-another-movie-app/commits
 - define an endpoint to retrieve a list of movies ordered by popularity: https://developer.themoviedb.org/reference/movie-popular-list
 - you will need to register and retrieve API credentials
 
+Code for this section: https://github.com/avidenie/yet-another-movie-app/commits/06-data-fetch
+
 ### 7. Popular movies screen
 
 - use the data fetched in the previous section to render a list of popular movies
