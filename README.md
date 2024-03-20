@@ -64,6 +64,8 @@ Code for this section: https://github.com/avidenie/yet-another-movie-app/commits
   - if `isAuthenticated` from `auth` reducer is `true`, render a placeholder `PopularMoviesScreen`
 - add a way to navigate to the Profile screen so that the user can log out
 
+Code for this section: https://github.com/avidenie/yet-another-movie-app/commits/05-navigation
+
 ### 6. Fetch data from an API
 
 - set up [RTK Query](https://redux-toolkit.js.org/rtk-query/overview) for fetching and caching data
