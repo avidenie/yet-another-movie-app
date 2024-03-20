@@ -1,9 +1,12 @@
-import React, { useCallback, useState } from 'react';
-import { LoginFormData } from '../components/LoginForm';
 import { useToast } from '@gluestack-ui/themed';
+import React, { useCallback, useState } from 'react';
 import { Toast } from '../../core/components/Toast';
+import { useAppDispatch } from '../../core/store/hooks';
+import { LoginFormData } from '../components/LoginForm';
+import { authActions } from '../store/authSlice';
 
 export function useOnLogin() {
+  const dispatch = useAppDispatch();
   const [isLoading, setIsLoading] = useState(false);
 
   const toast = useToast();
@@ -13,7 +16,7 @@ export function useOnLogin() {
       setIsLoading(true);
       setTimeout(() => {
         if (data.username === 'root' && data.password === 'Test123!') {
-          // todo: wire up authentication flow
+          dispatch(authActions.login());
         } else {
           toast.show({
             render: ({ id }) => {
@@ -31,7 +34,7 @@ export function useOnLogin() {
         setIsLoading(false);
       }, 1000);
     },
-    [toast],
+    [dispatch, toast],
   );
 
   return { isLoading, onSubmit };

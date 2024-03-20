@@ -1,11 +1,15 @@
 import React from 'react';
-import { LoginScreen } from '../../auth/screens/LoginScreen';
+import { Provider } from 'react-redux';
+import { store } from '../store/store';
+import { Navigation } from './Navigation';
 import { ThemeProvider } from './ThemeProvider';
 
 export function App() {
   return (
-    <ThemeProvider>
-      <LoginScreen />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider>
+        <Navigation />
+      </ThemeProvider>
+    </Provider>
   );
 }
