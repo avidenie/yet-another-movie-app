@@ -4,7 +4,7 @@ import 'react-native';
 import { it } from '@jest/globals';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
-import { App } from '../src/core/App';
+import { App } from '../src/core/components/App';
 
 it('renders correctly', () => {
   renderer.create(<App />);
