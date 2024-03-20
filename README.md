@@ -54,6 +54,8 @@ Code for this section: https://github.com/avidenie/yet-another-movie-app/commits
 - add a logout button on a Profile screen and render different screens based on the `isAuthenticated` flag
 - set up persistance and persist the state between launches
 
+Code for this section: https://github.com/avidenie/yet-another-movie-app/commits/04-auth-reducer
+
 ### 5. Authentication flow
 
 - set up [React Navigation](https://reactnavigation.org/docs/getting-started)
